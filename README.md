@@ -7,7 +7,7 @@
 - MuiDataTables 
 
 # Production URL
-	[https://zigitest180421.netlify.app/](https://zigitest180421.netlify.app/)
+	https://zigitest180421.netlify.app/
 
 ## Instructions - Zigit test
 
