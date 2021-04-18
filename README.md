@@ -6,6 +6,9 @@
 - Local storage
 - MuiDataTables 
 
+# Production URL
+	https://zigitest180421.netlify.app/
+
 ## Instructions - Zigit test
 
 
