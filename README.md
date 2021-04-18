@@ -1,8 +1,8 @@
 
-# Zigit test - React , Redux
+# Zigit test - React
 - responsive for mobile
 - Material ui
-- Async actions with Thunk
+- Async actions with Redux Thunk
 - MuiDataTables using
 
 ## Instructions - Zigit test
