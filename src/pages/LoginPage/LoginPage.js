@@ -3,6 +3,8 @@ import { LockOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import { validateEmail } from '../../services/validateService';
+import { useDispatch } from 'react-redux';
+import { setLogin } from '../../redux/auth/authActions';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -34,13 +36,14 @@ const LoginPage = props => {
     const [rememberMe, setRememberMe] = useState(false)
 
     const classes = useStyles();
+    const dispatch = useDispatch();
 
     const emailChangeHandler = event => { setEmail(event.target.value) }
     const passwordChangeHandler = event => { setPassword(event.target.value) }
 
     const onSubmit = async (event) => {
-        console.log(email,password,rememberMe)
         event.preventDefault();
+        dispatch(setLogin(email , password , rememberMe));
     }
 
     return (
