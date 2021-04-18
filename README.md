@@ -3,7 +3,8 @@
 - responsive for mobile
 - Material ui
 - Async actions with Redux Thunk
-- MuiDataTables using
+- Local storage
+- MuiDataTables 
 
 ## Instructions - Zigit test
 
