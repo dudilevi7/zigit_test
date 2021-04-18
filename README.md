@@ -1,4 +1,10 @@
 
+# Zigit test - React , Redux
+- responsive for mobile
+- Material ui
+- Async actions with Thunk
+- MuiDataTables using
+
 ## Instructions - Zigit test
 
 
