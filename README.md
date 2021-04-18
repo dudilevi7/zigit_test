@@ -17,18 +17,10 @@ You will also see any lint errors in the console.
 
 
 
-3.`npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-4.`if theres any error with npm `
-	problem like npm err please read this tutroial -> https://www.geeksforgeeks.org/how-to-solve-npm-error-npm-err-code-elifecycle/
+3.`npm err `
+	
+	if after running npm start you have an errors like npm err please read this tutroial -> https://www.geeksforgeeks.org/how-to-solve-npm-error-npm-err-code-elifecycle/
+	it will fix that
 
 The test developed by `David Levi`
 18/04/2021
