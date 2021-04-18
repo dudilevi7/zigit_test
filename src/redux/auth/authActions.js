@@ -1,7 +1,7 @@
 import { LOGIN_API } from "../../constants/api/api"
 import fetchData from "../../services/fetchData"
-import { saveToLocalStorage } from "../../services/storageService"
-import { LOGIN_FAILED, LOGIN_START, SET_LOGIN, SET_LOGOUT } from "./authTypes"
+import { saveToLocalStorage } from "../../services/storageService";
+import { LOGIN_FAILED, LOGIN_START, SET_LOGIN, SET_LOGOUT } from "./authTypes";
 
 export const setLogin = (email , password , rememberMe) => {
 

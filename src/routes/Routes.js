@@ -6,7 +6,7 @@ import LoginPage from '../pages/LoginPage/LoginPage';
 
 const Routes = () => {
     const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
-
+    
     return (
         <Switch>
             <Route exact path = '/' render = {() => (isLoggedIn ? <Redirect to= "/info" /> : <LoginPage/>)}/>
