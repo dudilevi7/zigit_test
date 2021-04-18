@@ -7,7 +7,7 @@
 - MuiDataTables 
 
 # Production URL
-	https://zigitest180421.netlify.app/
+	[https://zigitest180421.netlify.app/]
 
 ## Instructions - Zigit test
 
@@ -27,7 +27,7 @@ You will also see any lint errors in the console.
 
 3.`npm err `
 	
-	if after running npm start you have an errors like npm err please read this tutroial -> https://www.geeksforgeeks.org/how-to-solve-npm-error-npm-err-code-elifecycle/
+	if after running npm start you have an errors like npm err please read this tutroial -> [https://www.geeksforgeeks.org/how-to-solve-npm-error-npm-err-code-elifecycle/]
 	it will fix that
 
 The test developed by `David Levi`
