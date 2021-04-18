@@ -65,7 +65,7 @@ const ProjectsTable = props => {
         filterType: "dropdown",
         selectableRows: 'none',
         responsive: 'vertical',
-        tableBodyHeight: '400px',
+        tableBodyHeight: '550px',
     };
 
     const rowsData = () => {

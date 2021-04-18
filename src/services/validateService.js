@@ -7,5 +7,9 @@ export const validateEmail = email => {
 };
 
 export const validatePassword = password => {
-    return true;
+    let passwordRegEx = /^(?=.*[0-9])(?=.*[A-Z]).{8,10}$/;
+    if (!passwordRegEx.test(password)) 
+        return false;
+    else
+        return true;
 }

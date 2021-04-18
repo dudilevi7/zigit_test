@@ -15,8 +15,8 @@ const Header = () => {
 
     return (<div className="headerContainer">
                 <div className="helloMsg">
-                    <PersonOutline size="large" color="primary"/>
-                    <strong>Hello , {name} </strong>
+                    <PersonOutline fontSize="large" color="primary"/>
+                    <strong className="hello">Hello , {name} </strong>
                 </div>
                 <Button variant="contained" color="primary" disableElevation onClick={onLogoutClick}>LOGOUT</Button>
             </div>)

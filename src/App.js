@@ -1,15 +1,17 @@
-import { useEffect } from 'react';
+
 import { useSelector } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import './App.css';
 import Routes from './routes/Routes';
+import './App.css';
+import { LoaderSpinner } from './components/Exceptions/Exceptions';
+
 
 const App = () => {
-  const userData = useSelector(state => state.auth)
+  
+  const isLoading = useSelector(state => state.auth.isLoading)
 
-  useEffect(() => {
-    console.log(userData)
-  })
+  if (isLoading) return <LoaderSpinner />
+
   return (
     <BrowserRouter>
       <div className="App">

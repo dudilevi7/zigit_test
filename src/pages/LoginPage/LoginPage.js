@@ -2,7 +2,7 @@ import { Avatar, Box, Button, Checkbox, Container, CssBaseline, FormControlLabel
 import { LockOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
-import { validateEmail } from '../../services/validateService';
+import { validateEmail, validatePassword } from '../../services/validateService';
 import { useDispatch } from 'react-redux';
 import { setLogin } from '../../redux/auth/authActions';
 
@@ -43,7 +43,8 @@ const LoginPage = props => {
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        dispatch(setLogin(email , password , rememberMe));
+        if (validateEmail(email) && validatePassword(password))
+            dispatch(setLogin(email , password , rememberMe));
     }
 
     return (
@@ -75,8 +76,8 @@ const LoginPage = props => {
                         margin="normal"
                         required
                         fullWidth
-                        helperText={password && password.length<8 && "Password must has at least 8 characters"}
-                        error={(password && password.length<8)? true : false}
+                        helperText={password && !validatePassword(password) && "Password required at least one uppercase letter, one digit and length of 8-10 characters "}
+                        error={(password && !validatePassword(password))? true : false}
                         onChange={passwordChangeHandler}
                         name="password"
                         label="Password"
