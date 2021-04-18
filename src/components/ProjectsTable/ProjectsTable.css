@@ -1,0 +1,9 @@
+.tableContainer{
+    margin : 20px 10px 10px 20px;
+}
+
+@media only screen and (max-width: 680px) {
+    .tableContainer{
+        margin-block : 20px;
+    }
+}
